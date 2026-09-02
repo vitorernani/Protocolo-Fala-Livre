@@ -1,0 +1,3126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Protocolo Fala Livre — Reduza a Tela e Destrave a Fala em 21 Dias</title>
+  <meta name="description" content="60 atividades sem tela organizadas em 21 dias para mães de crianças de 2 a 4 anos reduzirem a tela e estimularem a fala em casa.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Protocolo Fala Livre — Reduza a Tela e Destrave a Fala em 21 Dias">
+  <meta property="og:description" content="60 atividades de 10 minutos prontas para aplicar em casa, sem crise e sem fonoaudióloga particular.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Lora (Serif) & Inter (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & THEME DEFINITIONS
+       ========================================================================== */
+    :root {
+      --bg-main: #FFF7EE;
+      --bg-sec: #FFEBD6;
+      --bg-card: #FFFFFF;
+      --border-subtle: #F0DFCB;
+      --border-accent: #E4CCA8;
+      
+      --terracotta: #C4451F;
+      --terracotta-hover: #A83614;
+      --terracotta-light: #FBECE7;
+      --terracotta-glow: rgba(196, 69, 31, 0.2);
+      
+      --green: #4C9A82;
+      --green-dark: #377461;
+      --green-light: #EBF6F2;
+      
+      --yellow: #FFC857;
+      --yellow-light: #FFF9EB;
+      --yellow-dark: #B38600;
+      
+      --text-dark: #2C3444;
+      --text-muted: #5C6779;
+      --text-light: #7E8C9E;
+      
+      --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      
+      --shadow-sm: 0 2px 6px rgba(44, 52, 68, 0.04);
+      --shadow-md: 0 6px 18px rgba(44, 52, 68, 0.06);
+      --shadow-lg: 0 14px 32px rgba(196, 69, 31, 0.12);
+      --shadow-card: 0 4px 16px rgba(44, 52, 68, 0.05);
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      font-size: 16px;
+      background-color: var(--bg-main);
+      color: var(--text-dark);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--text-dark);
+      background-color: var(--bg-main);
+      overflow-x: hidden;
+      padding-bottom: 72px; /* space for sticky mobile CTA */
+    }
+
+    @media (min-width: 769px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      color: var(--terracotta);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: var(--text-dark);
+      font-size: 1.05rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--terracotta);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .container-wide {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Section Spacing & Alternating Backgrounds */
+    section {
+      padding: 3.75rem 0;
+      position: relative;
+    }
+
+    .bg-main {
+      background-color: var(--bg-main);
+    }
+
+    .bg-secondary {
+      background-color: var(--bg-sec);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .bg-gradient-warm {
+      background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-sec) 50%, var(--bg-main) 100%);
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 1.85rem;
+      text-align: center;
+      margin-bottom: 1.75rem;
+      color: var(--terracotta);
+    }
+
+    @media (min-width: 640px) {
+      .section-title {
+        font-size: 2.15rem;
+      }
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: -1rem auto 2rem auto;
+      line-height: 1.5;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    @media (min-width: 640px) {
+      .card {
+        padding: 2rem;
+      }
+    }
+
+    /* Badges & Tags */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+
+    .badge-terracotta {
+      background-color: var(--terracotta-light);
+      color: var(--terracotta);
+      border: 1px solid rgba(196, 69, 31, 0.25);
+    }
+
+    .badge-green {
+      background-color: var(--green-light);
+      color: var(--green-dark);
+      border: 1px solid rgba(76, 154, 130, 0.25);
+    }
+
+    .badge-yellow {
+      background-color: var(--yellow-light);
+      color: var(--yellow-dark);
+      border: 1px solid rgba(255, 200, 87, 0.5);
+    }
+
+    /* Buttons */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      width: 100%;
+      padding: 1.15rem 1.75rem;
+      background-color: var(--terracotta);
+      color: #FFFFFF !important;
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      line-height: 1.35;
+    }
+
+    .btn-cta:hover, .btn-cta:focus {
+      background-color: var(--terracotta-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(196, 69, 31, 0.22);
+    }
+
+    .btn-cta:active {
+      transform: translateY(0);
+    }
+
+    /* Icons */
+    .icon {
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      stroke-width: 2;
+      stroke: currentColor;
+      fill: none;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+
+    .icon-lg {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+
+    .icon-green {
+      color: var(--green);
+    }
+
+    .icon-terracotta {
+      color: var(--terracotta);
+    }
+
+    /* ==========================================================================
+       PROFESSIONAL 3D PRODUCT MOCKUP ENGINE (CRISP & RESPONSIVE)
+       ========================================================================== */
+    .mockup-3d-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto 1.5rem auto;
+      width: 100%;
+      max-width: 560px;
+      position: relative;
+    }
+
+    .mockup-badges-top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 460px;
+      margin-bottom: 0.75rem;
+      gap: 0.5rem;
+      z-index: 10;
+    }
+
+    .mockup-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      white-space: nowrap;
+    }
+
+    /* Scene Layout */
+    .mockup-scene-3d {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      height: 330px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .mockup-scene-3d {
+        max-width: 320px;
+        height: 260px;
+      }
+    }
+
+    /* Contact Floor Shadow */
+    .floor-shadow-realistic {
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 92%;
+      height: 24px;
+      background: radial-gradient(ellipse at center, rgba(35, 20, 10, 0.45) 0%, rgba(35, 20, 10, 0.15) 55%, transparent 75%);
+      border-radius: 50%;
+      filter: blur(6px);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* 3D HARDCOVER BOOK (BOX) */
+    .box-book-3d {
+      position: relative;
+      width: 215px;
+      height: 295px;
+      margin-right: 55px;
+      z-index: 5;
+      display: flex;
+      filter: drop-shadow(10px 18px 24px rgba(45, 20, 10, 0.3));
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 480px) {
+      .box-book-3d {
+        width: 170px;
+        height: 235px;
+        margin-right: 40px;
+      }
+    }
+
+    .mockup-scene-3d:hover .box-book-3d {
+      transform: translateY(-4px);
+    }
+
+    /* Book Top Perspective Pages */
+    .book-top-edge {
+      position: absolute;
+      top: -14px;
+      left: 32px;
+      width: calc(100% - 32px);
+      height: 14px;
+      background: linear-gradient(90deg, #E6DACB 0%, #FAF3EA 40%, #E8DCCF 100%);
+      transform: skewX(-42deg);
+      transform-origin: bottom left;
+      border-top: 1px solid #D9CABB;
+      border-right: 1px solid #C5B4A2;
+      box-shadow: inset 0 -2px 4px rgba(0,0,0,0.08);
+      border-radius: 2px 3px 0 0;
+    }
+
+    @media (max-width: 480px) {
+      .book-top-edge {
+        top: -11px;
+        left: 26px;
+        width: calc(100% - 26px);
+        height: 11px;
+      }
+    }
+
+    /* Book Spine */
+    .book-spine-side {
+      width: 32px;
+      height: 100%;
+      background: linear-gradient(90deg, #782108 0%, #A83614 30%, #C4451F 70%, #902B0E 100%);
+      border-radius: 4px 0 0 4px;
+      box-shadow: inset -2px 0 6px rgba(0, 0, 0, 0.4), inset 2px 0 4px rgba(255, 255, 255, 0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 0;
+      flex-shrink: 0;
+      position: relative;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      .book-spine-side {
+        width: 26px;
+        padding: 0.85rem 0;
+      }
+    }
+
+    .book-spine-title {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 480px) {
+      .book-spine-title {
+        font-size: 0.625rem;
+      }
+    }
+
+    .book-spine-sub {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.525rem;
+      font-weight: 700;
+      color: #FFDE59;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 480px) {
+      .book-spine-sub {
+        display: none;
+      }
+    }
+
+    /* Book Front Cover */
+    .book-front-cover {
+      flex-grow: 1;
+      height: 100%;
+      background: linear-gradient(155deg, #E05325 0%, #C4451F 45%, #9E3211 100%);
+      border-radius: 0 6px 6px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      padding: 0.85rem 0.85rem 0.65rem 0.85rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      box-shadow: inset 4px 0 8px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 480px) {
+      .book-front-cover {
+        padding: 0.65rem 0.65rem 0.5rem 0.65rem;
+      }
+    }
+
+    /* Glossy highlight line over cover */
+    .book-front-cover::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.06) 35%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Book Inner Elements */
+    .book-header-box {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .book-title-bold {
+      font-size: 1.15rem;
+      font-weight: 900;
+      line-height: 1.05;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+      margin-bottom: 0.15rem;
+    }
+
+    .book-title-glow {
+      color: #FFDE59;
+      display: block;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 480px) {
+      .book-title-bold {
+        font-size: 0.95rem;
+      }
+      .book-title-glow {
+        font-size: 1.15rem;
+      }
+    }
+
+    .book-sub-ribbon {
+      background: #23120B;
+      color: #FFFFFF;
+      font-size: 0.575rem;
+      font-weight: 700;
+      padding: 0.25rem 0.4rem;
+      border-radius: 4px;
+      margin: 0.25rem auto 0.4rem auto;
+      line-height: 1.2;
+      width: fit-content;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 480px) {
+      .book-sub-ribbon {
+        font-size: 0.485rem;
+        padding: 0.2rem 0.35rem;
+        margin-bottom: 0.25rem;
+      }
+    }
+
+    .book-illustration-box {
+      background: #FFFFFF;
+      border-radius: 6px;
+      padding: 0.4rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.12);
+      margin: 0.15rem 0;
+      z-index: 2;
+    }
+
+    .book-schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+
+    .book-schedule-cell {
+      height: 6px;
+      border-radius: 1px;
+      background: #ECE4D8;
+    }
+    .book-schedule-cell.c-yellow { background: #FFB703; }
+    .book-schedule-cell.c-green { background: #4C9A82; }
+    .book-schedule-cell.c-terra { background: #C4451F; }
+
+    .book-illustration-visual {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin: 0.15rem 0;
+    }
+
+    .book-mascot-emoji {
+      font-size: 1.85rem;
+      line-height: 1;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+    }
+
+    @media (max-width: 480px) {
+      .book-mascot-emoji {
+        font-size: 1.4rem;
+      }
+    }
+
+    .book-timer-tag {
+      font-size: 0.55rem;
+      font-weight: 800;
+      color: var(--terracotta);
+      background: var(--terracotta-light);
+      padding: 0.15rem 0.35rem;
+      border-radius: 3px;
+    }
+
+    .book-bonus-seal {
+      position: absolute;
+      bottom: -6px;
+      right: -6px;
+      width: 46px;
+      height: 46px;
+      background: radial-gradient(circle, #FFDE59 0%, #FFAA00 100%);
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+      color: #26140B;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.525rem;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transform: rotate(10deg);
+    }
+
+    .book-bonus-seal span {
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 480px) {
+      .book-bonus-seal {
+        width: 38px;
+        height: 38px;
+        font-size: 0.45rem;
+      }
+      .book-bonus-seal span {
+        font-size: 0.7rem;
+      }
+    }
+
+    .book-stars-gold {
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+      color: #FFDE59;
+      font-size: 0.95rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 480px) {
+      .book-stars-gold {
+        font-size: 0.8rem;
+        gap: 2px;
+      }
+    }
+
+    /* 3D SMARTPHONE (IPHONE MOCKUP) */
+    .smartphone-3d {
+      position: absolute;
+      right: 10px;
+      bottom: 6px;
+      width: 145px;
+      height: 255px;
+      background: #111111;
+      border-radius: 26px;
+      padding: 6px;
+      box-shadow: 
+        0 0 0 1px #333333,
+        inset 0 0 0 2px #1E1E1E,
+        8px 16px 30px rgba(0, 0, 0, 0.45);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 480px) {
+      .smartphone-3d {
+        right: 0px;
+        width: 115px;
+        height: 205px;
+        border-radius: 20px;
+        padding: 5px;
+      }
+    }
+
+    .mockup-scene-3d:hover .smartphone-3d {
+      transform: translateY(-6px);
+    }
+
+    .smartphone-screen {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(170deg, #E05325 0%, #C4451F 45%, #9E3211 100%);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    @media (max-width: 480px) {
+      .smartphone-screen {
+        border-radius: 15px;
+        padding: 0.45rem 0.35rem;
+      }
+    }
+
+    .smartphone-dynamic-island {
+      width: 44px;
+      height: 10px;
+      background: #000000;
+      border-radius: 20px;
+      margin: 0 auto 0.3rem auto;
+      z-index: 5;
+    }
+
+    @media (max-width: 480px) {
+      .smartphone-dynamic-island {
+        width: 32px;
+        height: 8px;
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    .smartphone-glare {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(130deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.05) 45%, transparent 65%);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .phone-cover-inner {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .phone-title-sm {
+      font-size: 0.65rem;
+      font-weight: 900;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      line-height: 1.1;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .phone-title-highlight {
+      color: #FFDE59;
+      display: block;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 480px) {
+      .phone-title-sm {
+        font-size: 0.525rem;
+      }
+      .phone-title-highlight {
+        font-size: 0.65rem;
+      }
+    }
+
+    .phone-art-card {
+      background: #FFFFFF;
+      border-radius: 5px;
+      padding: 0.3rem;
+      margin: 0.25rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .phone-mascot {
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    @media (max-width: 480px) {
+      .phone-mascot {
+        font-size: 1rem;
+      }
+    }
+
+    .phone-stars {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      color: #FFDE59;
+      font-size: 0.75rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 480px) {
+      .phone-stars {
+        font-size: 0.6rem;
+      }
+    }
+
+    /* INDIVIDUAL BONUS 3D PREVIEWS (Bloco 8) */
+    .bonus-card-with-mockup {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: center;
+    }
+
+    @media (min-width: 640px) {
+      .bonus-card-with-mockup {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+      }
+    }
+
+    .bonus-mockup-visual {
+      width: 140px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .bonus-info-content {
+      flex-grow: 1;
+    }
+
+    /* 3D Mini Standalone Book */
+    .mini-book-container {
+      position: relative;
+      width: 120px;
+      height: 165px;
+      display: flex;
+      filter: drop-shadow(6px 10px 16px rgba(45, 20, 10, 0.25));
+      transition: transform 0.25s ease;
+    }
+
+    .mini-book-container:hover {
+      transform: translateY(-4px);
+    }
+
+    .mini-book-top-pages {
+      position: absolute;
+      top: -8px;
+      left: 18px;
+      width: calc(100% - 18px);
+      height: 8px;
+      background: linear-gradient(90deg, #E6DACB 0%, #FAF3EA 40%, #E8DCCF 100%);
+      transform: skewX(-42deg);
+      transform-origin: bottom left;
+      border-top: 1px solid #D9CABB;
+      border-right: 1px solid #C5B4A2;
+    }
+
+    .mini-spine {
+      width: 18px;
+      height: 100%;
+      border-radius: 3px 0 0 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.4);
+      flex-shrink: 0;
+    }
+
+    .mini-spine-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.45rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      white-space: nowrap;
+    }
+
+    .mini-cover {
+      flex-grow: 1;
+      height: 100%;
+      border-radius: 0 4px 4px 0;
+      padding: 0.5rem 0.45rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #FFFFFF;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mini-cover::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* Color variations for bonus covers */
+    .bg-cov-orange { background: linear-gradient(155deg, #E05325 0%, #C4451F 50%, #9E3211 100%); }
+    .bg-spin-orange { background: linear-gradient(90deg, #782108 0%, #A83614 40%, #C4451F 100%); }
+
+    .bg-cov-green { background: linear-gradient(155deg, #4C9A82 0%, #3B7E69 50%, #255848 100%); }
+    .bg-spin-green { background: linear-gradient(90deg, #1C4638 0%, #2A6653 40%, #4C9A82 100%); }
+
+    .bg-cov-dark { background: linear-gradient(155deg, #382E2B 0%, #261E1B 50%, #150F0D 100%); }
+    .bg-spin-dark { background: linear-gradient(90deg, #0F0B0A 0%, #1D1614 40%, #382E2B 100%); }
+
+    /* Fridge Planner Mockup (Bônus 2) */
+    .planner-mockup-wrap {
+      position: relative;
+      width: 130px;
+      height: 165px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .planner-sheet {
+      width: 110px;
+      height: 145px;
+      background: #FFFFFF;
+      border: 1px solid #E2D7CA;
+      border-radius: 6px;
+      box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.18);
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .planner-magnet {
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 14px;
+      background: radial-gradient(circle, #E63946 0%, #B71C1C 100%);
+      border-radius: 50%;
+      border: 1px solid #FFFFFF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Flashcards Deck Mockup (Bônus 4) */
+    .cards-deck-wrap {
+      position: relative;
+      width: 125px;
+      height: 155px;
+    }
+
+    .card-item-stacked {
+      position: absolute;
+      width: 95px;
+      height: 130px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .card-item-stacked.st-1 {
+      top: 0;
+      left: 0;
+      transform: rotate(-6deg);
+      background: #FFF7EC;
+      border-color: #F6D8A8;
+    }
+
+    .card-item-stacked.st-2 {
+      top: 8px;
+      left: 10px;
+      transform: rotate(3deg);
+      background: #F0FAF7;
+      border-color: #BEE3D8;
+    }
+
+    .card-item-stacked.st-3 {
+      top: 16px;
+      left: 18px;
+      transform: rotate(-1deg);
+      background: #FFFFFF;
+      border: 2px solid var(--yellow);
+      box-shadow: 4px 8px 16px rgba(0,0,0,0.18);
+    }
+
+
+    .hero-section {
+      padding: 3.5rem 0 3rem 0;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, #FFFDF9 0%, var(--bg-main) 100%);
+    }
+
+    .hero-badge-wrap {
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-headline {
+      font-size: 2rem;
+      line-height: 1.22;
+      margin-bottom: 1.35rem;
+      color: var(--terracotta);
+      max-width: 740px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 640px) {
+      .hero-headline {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero-headline {
+        font-size: 2.85rem;
+      }
+    }
+
+    .hero-subheadline {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 640px) {
+      .hero-subheadline {
+        font-size: 1.25rem;
+      }
+    }
+
+    .hero-divider {
+      width: 64px;
+      height: 4px;
+      background-color: var(--yellow);
+      border-radius: var(--radius-full);
+      margin: 2rem auto 0 auto;
+    }
+
+    /* ==========================================================================
+       BLOCO 2: COMO FUNCIONA (3 passos)
+       ========================================================================== */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.25rem;
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .step-number {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--terracotta-light);
+      color: var(--terracotta);
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      border: 2px solid var(--terracotta);
+    }
+
+    .step-title {
+      font-size: 1.15rem;
+      color: var(--terracotta);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-desc {
+      font-size: 0.975rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    /* ==========================================================================
+       BLOCO 3: ENTREGÁVEIS (resumo em lista)
+       ========================================================================== */
+    .deliverables-list {
+      list-style: none;
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .deliverable-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .deliverable-icon-wrap {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      background-color: var(--green-light);
+      color: var(--green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       BLOCO 4: PERFEITO PARA
+       ========================================================================== */
+    .target-box {
+      background: #FFFFFF;
+      border: 2px solid var(--yellow);
+      border-radius: var(--radius-md);
+      padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    @media (min-width: 640px) {
+      .target-box {
+        padding: 2.25rem 2rem;
+      }
+    }
+
+    .target-box::before {
+      content: "🎯";
+      position: absolute;
+      top: -18px;
+      left: 24px;
+      background: var(--yellow-light);
+      border: 1px solid var(--yellow);
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+    }
+
+    .target-text {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      color: var(--text-dark);
+      margin-bottom: 0;
+    }
+
+    /* ==========================================================================
+       BLOCO 5, 7, 9: DEPOIMENTOS
+       ========================================================================== */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.35rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .testimonial-card-highlight {
+      border: 2px solid var(--terracotta);
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFFDF9 100%);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .avatar-mother {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--terracotta-light);
+      color: var(--terracotta);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: 1px solid rgba(196, 69, 31, 0.2);
+      flex-shrink: 0;
+    }
+
+    .avatar-mother-green {
+      background: var(--green-light);
+      color: var(--green-dark);
+      border: 1px solid rgba(76, 154, 130, 0.2);
+    }
+
+    .avatar-mother-yellow {
+      background: var(--yellow-light);
+      color: var(--yellow-dark);
+      border: 1px solid rgba(255, 200, 87, 0.4);
+    }
+
+    .testimonial-author-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text-dark);
+      line-height: 1.2;
+    }
+
+    .testimonial-child {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.2;
+    }
+
+    .stars-gold {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 0.75rem;
+      color: #E69500;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .testimonial-body {
+      font-size: 0.965rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .testimonial-body strong {
+      color: var(--terracotta);
+    }
+
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: var(--green-dark);
+      background-color: var(--green-light);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      width: fit-content;
+    }
+
+    /* ==========================================================================
+       BLOCO 6: AGITAÇÃO DA DOR
+       ========================================================================== */
+    .pain-card {
+      background: #FFFFFF;
+      border-left: 4px solid var(--terracotta);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (min-width: 640px) {
+      .pain-card {
+        padding: 2.25rem 2rem;
+      }
+    }
+
+    .pain-card p {
+      font-size: 1.075rem;
+      line-height: 1.75;
+      color: var(--text-dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .pain-card p:last-child {
+      margin-bottom: 0;
+      font-weight: 600;
+      color: var(--terracotta);
+      font-size: 1.15rem;
+    }
+
+    /* ==========================================================================
+       BLOCO 8: ENTREGÁVEIS DETALHADO + BÔNUS
+       ========================================================================== */
+    .bonus-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 1.75rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .bonus-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (min-width: 640px) {
+      .bonus-card {
+        padding: 1.75rem;
+      }
+    }
+
+    .bonus-card-main {
+      border: 2px solid var(--terracotta);
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--terracotta-light) 100%);
+    }
+
+    .bonus-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    @media (min-width: 520px) {
+      .bonus-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .bonus-title {
+      font-size: 1.2rem;
+      color: var(--terracotta);
+    }
+
+    .bonus-desc {
+      font-size: 1rem;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .bonus-benefit {
+      display: inline-block;
+      background-color: var(--green-light);
+      color: var(--green-dark);
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      margin-top: 0.25rem;
+    }
+
+    /* ==========================================================================
+       BLOCO 10: PARA QUEM É
+       ========================================================================== */
+    .who-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .who-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .who-check {
+      width: 28px;
+      height: 28px;
+      background-color: var(--green-light);
+      color: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .who-text {
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: var(--text-dark);
+      margin-bottom: 0;
+    }
+
+    /* ==========================================================================
+       BLOCO 11: RECAPITULAÇÃO COM ANCORAGEM DE VALOR
+       ========================================================================== */
+    .anchoring-box {
+      background: var(--bg-card);
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (min-width: 640px) {
+      .anchoring-box {
+        padding: 2.25rem 2rem;
+      }
+    }
+
+    .anchoring-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .anchoring-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px dashed var(--border-subtle);
+      font-size: 1.025rem;
+      color: var(--text-dark);
+    }
+
+    .anchoring-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .price-struck {
+      text-decoration: line-through;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .anchoring-total-row {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      text-align: center;
+    }
+
+    .anchoring-total-label {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .anchoring-total-value {
+      font-family: var(--font-serif);
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-decoration: line-through;
+      line-height: 1;
+    }
+
+    /* ==========================================================================
+       BLOCO 12 & 17: PREÇO + CTA (OFERTA)
+       ========================================================================== */
+    .offer-box {
+      background: #FFFFFF;
+      border: 3px solid var(--terracotta);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      box-shadow: 0 16px 40px rgba(196, 69, 31, 0.14);
+      position: relative;
+      text-align: center;
+    }
+
+    @media (min-width: 640px) {
+      .offer-box {
+        padding: 3rem 2.5rem;
+      }
+    }
+
+    .offer-badge {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--terracotta);
+      color: #FFFFFF;
+      padding: 0.4rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(196, 69, 31, 0.3);
+      white-space: nowrap;
+    }
+
+    .offer-copy {
+      font-size: 1.075rem;
+      line-height: 1.65;
+      color: var(--text-dark);
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .price-box {
+      background: var(--bg-sec);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1rem;
+      margin: 1.75rem 0;
+    }
+
+    .price-from {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: line-through;
+      margin-bottom: 0.25rem;
+    }
+
+    .price-to-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+    }
+
+    .price-to-tag {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .price-main {
+      font-family: var(--font-serif);
+      font-size: 3.25rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      line-height: 1;
+      margin: 0.25rem 0;
+    }
+
+    @media (min-width: 640px) {
+      .price-main {
+        font-size: 4rem;
+      }
+    }
+
+    .price-condition {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .price-security-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+
+    /* ==========================================================================
+       BLOCO 13: COMO ACESSAR
+       ========================================================================== */
+    .access-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .access-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .access-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .access-icon-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background-color: var(--yellow-light);
+      color: var(--yellow-dark);
+      border: 2px solid var(--yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .access-step-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      margin-bottom: 0.5rem;
+    }
+
+    .access-step-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    /* ==========================================================================
+       BLOCO 14: GARANTIA
+       ========================================================================== */
+    .guarantee-box {
+      background: var(--bg-card);
+      border: 2px solid var(--green);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .guarantee-box {
+        flex-direction: row;
+        text-align: left;
+        padding: 2.25rem 2rem;
+        gap: 2rem;
+      }
+    }
+
+    .guarantee-seal {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-light) 0%, #D6EFE7 100%);
+      border: 3px dashed var(--green);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--green-dark);
+    }
+
+    .guarantee-days {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .guarantee-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .guarantee-title {
+      font-size: 1.45rem;
+      color: var(--green-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .guarantee-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+
+    /* ==========================================================================
+       BLOCO 16: FECHAMENTO BINÁRIO
+       ========================================================================== */
+    .binary-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin: 1.75rem 0;
+    }
+
+    @media (min-width: 640px) {
+      .binary-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .binary-card {
+      border-radius: var(--radius-md);
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .binary-card-1 {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      opacity: 0.85;
+    }
+
+    .binary-card-2 {
+      background: #FFFFFF;
+      border: 2px solid var(--terracotta);
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .binary-tag {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    .binary-tag-1 {
+      color: var(--text-muted);
+    }
+
+    .binary-tag-2 {
+      color: var(--terracotta);
+    }
+
+    .binary-desc {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+      margin-bottom: 0;
+    }
+
+    .binary-conclusion {
+      text-align: center;
+      margin-top: 1.75rem;
+    }
+
+    .binary-conclusion p {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--terracotta);
+    }
+
+    /* ==========================================================================
+       BLOCO 18: FAQ (Acordeão)
+       ========================================================================== */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-top: 1.5rem;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item.active {
+      border-color: var(--terracotta);
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 1.25rem 1.5rem;
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-question:hover {
+      color: var(--terracotta);
+    }
+
+    .faq-chevron {
+      width: 20px;
+      height: 20px;
+      color: var(--terracotta);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
+      padding: 0 1.5rem;
+      background-color: #FAF6F0;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+      padding: 0 1.5rem 1.25rem 1.5rem;
+    }
+
+    .faq-answer p {
+      font-size: 0.985rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--bg-sec);
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.5rem 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .footer-disclaimer {
+      max-width: 620px;
+      margin: 0 auto 1.25rem auto;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--text-light);
+    }
+
+    /* ==========================================================================
+       STICKY MOBILE CTA BAR
+       ========================================================================== */
+    .mobile-sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.25rem;
+      box-shadow: 0 -4px 16px rgba(44, 52, 68, 0.08);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    @media (min-width: 769px) {
+      .mobile-sticky-bar {
+        display: none;
+      }
+    }
+
+    .sticky-price-info {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .sticky-price-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .sticky-price-val {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--terracotta);
+    }
+
+    .sticky-btn {
+      padding: 0.75rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      background-color: var(--terracotta);
+      color: #FFFFFF !important;
+      text-decoration: none;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(196, 69, 31, 0.25);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       BLOCO 1: HEADLINE + SUBHEADLINE (sem nenhum botão neste bloco)
+       ======================================================================== -->
+  <section class="hero-section" id="topo">
+    <div class="container">
+      <div class="hero-badge-wrap">
+        <span class="badge badge-terracotta">
+          <svg class="icon icon-terracotta" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+          Protocolo de 21 Dias Sem Tela • 2 a 4 Anos
+        </span>
+      </div>
+
+      <h1 class="hero-headline">
+        Seu filho de 2 a 4 anos fala pouco e você não sabe se é a tela? O Protocolo Fala Livre te dá o caminho prático pra reverter isso em 21 dias
+      </h1>
+
+      <p class="hero-subheadline">
+        Pra mães que sentem o peso da culpa toda vez que a tela entra — atividades prontas de 10 minutos, sem precisar de fonoaudióloga particular.
+      </p>
+
+      <!-- 3D PRODUCT MOCKUP BUNDLE HERO -->
+      <div class="mockup-3d-wrapper" aria-label="Mockup 3D do Protocolo Fala Livre e Bônus">
+        <div class="mockup-badges-top">
+          <div class="mockup-pill-badge">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            <span>Acesso Imediato em PDF</span>
+          </div>
+          
+          <div class="mockup-pill-badge">
+            <span style="color: #FFB703;">★★★★★</span>
+            <span>+2.400 Mães</span>
+          </div>
+        </div>
+
+        <div class="mockup-scene-3d">
+          <!-- Floor Shadow -->
+          <div class="floor-shadow-realistic"></div>
+
+          <!-- 3D STANDING HARDCOVER BOOK (BOX) -->
+          <div class="box-book-3d">
+            <div class="book-top-edge"></div>
+
+            <!-- Spine -->
+            <div class="book-spine-side">
+              <span class="book-spine-sub">21 DIAS</span>
+              <span class="book-spine-title">PROTOCOLO FALA LIVRE</span>
+              <span style="font-size: 0.65rem;">🧸</span>
+            </div>
+
+            <!-- Front Cover -->
+            <div class="book-front-cover">
+              <div class="book-header-box">
+                <div class="book-title-bold">
+                  Protocolo
+                  <span class="book-title-glow">Fala Livre</span>
+                </div>
+                <div class="book-sub-ribbon">60 Atividades Sem Tela em 21 Dias</div>
+              </div>
+
+              <div class="book-illustration-box">
+                <div class="book-schedule-grid">
+                  <div class="book-schedule-cell c-yellow"></div>
+                  <div class="book-schedule-cell c-green"></div>
+                  <div class="book-schedule-cell c-terra"></div>
+                  <div class="book-schedule-cell c-yellow"></div>
+                  <div class="book-schedule-cell c-green"></div>
+                  <div class="book-schedule-cell c-terra"></div>
+                  <div class="book-schedule-cell c-yellow"></div>
+                </div>
+
+                <div class="book-illustration-visual">
+                  <span class="book-mascot-emoji">🧸💬</span>
+                  <span class="book-timer-tag">10 min/dia</span>
+                </div>
+
+                <div class="book-bonus-seal">
+                  <span>60</span>
+                  AULAS
+                </div>
+              </div>
+
+              <div class="book-stars-gold">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3D SMARTPHONE (IPHONE MOCKUP) -->
+          <div class="smartphone-3d">
+            <div class="smartphone-screen">
+              <div class="smartphone-dynamic-island"></div>
+              <div class="smartphone-glare"></div>
+              
+              <div class="phone-cover-inner">
+                <span style="font-size: 0.475rem; font-weight: 800; color: #FFE680; text-transform: uppercase;">Acesso Digital</span>
+                <div class="phone-title-sm">
+                  Fala Livre
+                  <span class="phone-title-highlight">21 Dias</span>
+                </div>
+              </div>
+
+              <div class="phone-art-card">
+                <span class="phone-mascot">📱✨</span>
+                <span style="font-size: 0.45rem; font-weight: 800; color: var(--terracotta);">Cronograma & Cards</span>
+              </div>
+
+              <div>
+                <div class="phone-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div style="font-size: 0.45rem; font-weight: 700; color: #FFFFFF; text-align: center; margin-top: 2px;">+ 4 BÔNUS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-divider"></div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 2: COMO FUNCIONA (3 passos, sem botão)
+       ======================================================================== -->
+  <section class="bg-secondary" id="como-funciona">
+    <div class="container">
+      <h2 class="section-title">Como Funciona</h2>
+      <p class="section-subtitle">Um método simples e direto pensado pra rotina real de quem é mãe.</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Reduza a tela sem crise</h3>
+          <p class="step-desc">use as regras de substituição do protocolo pra tirar a tela sem a birra de sempre.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Aplique 10 minutos por dia</h3>
+          <p class="step-desc">siga o calendário pronto de 21 dias, sem inventar nada.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Veja a fala destravar</h3>
+          <p class="step-desc">semana a semana, seu filho volta a imitar, nomear e responder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 3: ENTREGÁVEIS (resumo, em lista visual com ícones)
+       ======================================================================== -->
+  <section class="bg-main" id="entregaveis-resumo">
+    <div class="container">
+      <h2 class="section-title">No Protocolo Fala Livre você vai ter acesso imediato a:</h2>
+
+      <ul class="deliverables-list">
+        <li class="deliverable-item">
+          <div class="deliverable-icon-wrap">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+          </div>
+          <span>60 atividades sem tela, prontas de usar, organizadas em 21 dias</span>
+        </li>
+
+        <li class="deliverable-item">
+          <div class="deliverable-icon-wrap">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span>Guia Passo a Passo: Como Tirar a Tela Sem Virar Guerra</span>
+        </li>
+
+        <li class="deliverable-item">
+          <div class="deliverable-icon-wrap">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="m9 16 2 2 4-4"/></svg>
+          </div>
+          <span>Cronograma de 21 Dias pronto pra imprimir e colar na geladeira</span>
+        </li>
+
+        <li class="deliverable-item">
+          <div class="deliverable-icon-wrap">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+          </div>
+          <span>Os 7 Erros que Atrasam Ainda Mais a Fala do Seu Filho</span>
+        </li>
+
+        <li class="deliverable-item">
+          <div class="deliverable-icon-wrap">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          </div>
+          <span>Kit SOS Sem Tela: 20 cartões de bolso pra fila, carro e restaurante</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 4: PERFEITO PARA
+       ======================================================================== -->
+  <section class="bg-secondary" id="perfeito-para">
+    <div class="container">
+      <div class="target-box">
+        <p class="target-text">
+          <strong>Perfeito para</strong> mães de crianças de 2 a 4 anos que sentem que o filho fala pouco pra idade e usam a tela como 'chupeta eletrônica' no dia a dia. Serve para quem já tentou reduzir a tela sozinha e não aguentou a birra, ou pra quem só precisa de um caminho pronto pra começar hoje.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 5: DEPOIMENTOS
+       ======================================================================== -->
+  <section class="bg-main" id="depoimentos">
+    <div class="container">
+      <h2 class="section-title">O que dizem as mães que aplicaram o Protocolo</h2>
+      <p class="section-subtitle">Histórias reais de mães que reduziram o tempo de tela e viram a fala dos filhos destravar em 21 dias.</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar-mother">CR</div>
+            <div class="testimonial-author-wrap">
+              <span class="testimonial-author">Camila Rocha</span>
+              <span class="testimonial-child">Mãe do Lucca (3 anos)</span>
+            </div>
+          </div>
+          <div class="stars-gold">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-body">
+            "Eu me sentia a pior mãe do mundo. Toda vez que precisava cozinhar ou trabalhar, ligava a TV e depois ficava chorando no quarto com medo de ter prejudicado a fala dele. Com <strong>apenas 8 dias aplicando as atividades de 10 minutos</strong>, o Lucca parou de ter birra ao desligar o desenho e começou a soltar frases como 'mamãe qué água' e 'dá a bola'. Tirou um peso enorme das minhas costas!"
+          </p>
+          <div class="verified-badge">
+            <svg class="icon" style="width: 14px; height: 14px; color: var(--green);" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Compra Verificada • Aluna do Protocolo</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card-highlight">
+          <div class="testimonial-header">
+            <div class="avatar-mother avatar-mother-green">MS</div>
+            <div class="testimonial-author-wrap">
+              <span class="testimonial-author">Mariana Silveira</span>
+              <span class="testimonial-child">Mãe do Theo (2 anos e 8 meses)</span>
+            </div>
+          </div>
+          <div class="stars-gold">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-body">
+            "A gente estava quase pagando R$ 350 por sessão em fono particular sem ter condições. O Protocolo abriu meus olhos: o problema era a tela como babá e a falta do estímulo certo. <strong>O cronograma na geladeira virou nosso ritual diário</strong>. Em menos de 3 semanas o vocabulário do Theo explodiu e ele voltou a olhar nos nossos olhos quando quer conversar!"
+          </p>
+          <div class="verified-badge">
+            <svg class="icon" style="width: 14px; height: 14px; color: var(--green);" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Compra Verificada • Aluna do Protocolo</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar-mother avatar-mother-yellow">JM</div>
+            <div class="testimonial-author-wrap">
+              <span class="testimonial-author">Juliana Menezes</span>
+              <span class="testimonial-child">Mãe da Maitê (2 anos e 4 meses)</span>
+            </div>
+          </div>
+          <div class="stars-gold">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-body">
+            "Eu já tinha tentado tirar o tablet por conta própria e era um inferno de choro. <strong>O Guia do Bônus 1 é ouro puro</strong>, ensina exatamente a regra de substituição sem briga. Hoje a Maitê nem lembra da tela quando começamos a brincar nos 10 minutos. Já fala o nome dos bichinhos todos e me pede pra contar histórias. Valeu cada centavo dos R$37!"
+          </p>
+          <div class="verified-badge">
+            <svg class="icon" style="width: 14px; height: 14px; color: var(--green);" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Compra Verificada • Aluna do Protocolo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 6: AGITAÇÃO DA DOR
+       ======================================================================== -->
+  <section class="bg-secondary" id="agitacao-dor">
+    <div class="container">
+      <div class="pain-card">
+        <p>
+          Você está perdendo toda vez que desliga a tela sem ter nada pronto pra colocar no lugar — e a birra que vem depois faz você ligar ela de novo amanhã.
+        </p>
+        <p>
+          Eu sei que você já cansou de sentir aquele aperto no peito quando outra mãe comenta que o filho dela 'já fala frases inteiras', e de pesquisar à noite, no escuro do quarto, se o seu filho está 'normal'.
+        </p>
+        <p>
+          Isso ainda acontece porque pode ser que você não tenha um caminho claro do que fazer nos 10 minutos que sobram no dia — só dicas soltas, sem sequência, sem saber se está fazendo certo.
+        </p>
+        <p>
+          E é isso que você vai encontrar no Protocolo Fala Livre.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 7: DEPOIMENTO LIGADO À DOR
+       ======================================================================== -->
+  <section class="bg-main" id="depoimento-dor">
+    <div class="container" style="max-width: 640px;">
+      <div class="testimonial-card testimonial-card-highlight">
+        <div class="testimonial-header">
+          <div class="avatar-mother">PN</div>
+          <div class="testimonial-author-wrap">
+            <span class="testimonial-author">Patrícia Nogueira</span>
+            <span class="testimonial-child">Mãe do Bernardo (3 anos e 2 meses)</span>
+          </div>
+        </div>
+        <div class="stars-gold">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-body">
+          "Sabe quando você vai numa festinha de família ou no parquinho e vê crianças mais novas falando tudo com clareza, enquanto seu filho só aponta e resmunga? Essa comparação me destruía por dentro e eu não dormia de tanta culpa. O Protocolo Fala Livre me deu a rota exata. <strong>Em 15 dias de atividades simples, o Bernardo começou a me chamar e pedir as coisas falando frases inteiras</strong>. Não existe alívio maior no mundo."
+        </p>
+        <div class="verified-badge">
+          <svg class="icon" style="width: 14px; height: 14px; color: var(--green);" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Compra Verificada • Aluna do Protocolo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 8: ENTREGÁVEIS DETALHADO + BÔNUS + 1º BOTÃO DE CTA
+       ======================================================================== -->
+  <section class="bg-secondary" id="entregaveis-detalhado">
+    <div class="container">
+      <h2 class="section-title">O que você vai encontrar dentro do Protocolo Fala Livre</h2>
+      <p class="section-subtitle">Tudo que você precisa em materiais práticos, digitais e prontos para impressão com acesso imediato.</p>
+
+      <div class="bonus-stack">
+        <!-- Produto Principal -->
+        <div class="bonus-card bonus-card-main">
+          <div class="bonus-card-with-mockup">
+            <div class="bonus-mockup-visual" aria-label="Mockup 3D do Produto Principal">
+              <div class="mini-book-container">
+                <div class="mini-book-top-pages"></div>
+                <div class="mini-spine bg-spin-orange">
+                  <span class="mini-spine-text">60 ATIVIDADES</span>
+                </div>
+                <div class="mini-cover bg-cov-orange">
+                  <div>
+                    <span style="font-size: 0.45rem; font-weight: 800; text-transform: uppercase; background: rgba(0,0,0,0.25); padding: 1px 4px; border-radius: 3px;">Principal</span>
+                    <div style="font-size: 0.775rem; font-weight: 900; line-height: 1.1; margin-top: 2px; text-transform: uppercase;">
+                      60 ATIVIDADES
+                      <span style="color: #FFDE59; display: block; font-size: 0.9rem;">SEM TELA</span>
+                    </div>
+                  </div>
+                  <div style="text-align: center;">
+                    <div style="font-size: 1.15rem; line-height: 1;">🧸💬</div>
+                    <span style="font-size: 0.45rem; font-weight: 800; color: #FFE680;">21 DIAS</span>
+                  </div>
+                  <div style="color: #FFDE59; font-size: 0.65rem; text-align: center;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus-info-content">
+              <div class="bonus-header">
+                <h3 class="bonus-title">Entregável 01 — 60 Atividades Sem Tela (Produto Principal)</h3>
+                <span class="badge badge-terracotta">Principal</span>
+              </div>
+              <p class="bonus-desc">
+                60 atividades de 10 minutos, divididas em 6 grupos temáticos, organizadas num calendário pronto de 21 dias — você só abre e aplica.
+              </p>
+              <span class="bonus-benefit">Base científica: estimulação de fala através do brincar guiado e repetição diária.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 1 -->
+        <div class="bonus-card">
+          <div class="bonus-card-with-mockup">
+            <div class="bonus-mockup-visual" aria-label="Mockup 3D Bônus 1">
+              <div class="mini-book-container">
+                <div class="mini-book-top-pages"></div>
+                <div class="mini-spine bg-spin-green">
+                  <span class="mini-spine-text">SEM GUERRA</span>
+                </div>
+                <div class="mini-cover bg-cov-green">
+                  <div>
+                    <span style="font-size: 0.45rem; font-weight: 800; text-transform: uppercase; background: rgba(0,0,0,0.25); padding: 1px 4px; border-radius: 3px;">BÔNUS 01</span>
+                    <div style="font-size: 0.725rem; font-weight: 900; line-height: 1.1; margin-top: 2px; text-transform: uppercase;">
+                      TIRAR A TELA
+                      <span style="color: #FFE680; display: block; font-size: 0.85rem;">SEM GUERRA</span>
+                    </div>
+                  </div>
+                  <div style="text-align: center;">
+                    <div style="font-size: 1.1rem; line-height: 1;">🛡️✨</div>
+                    <span style="font-size: 0.45rem; font-weight: 800;">8 PASSOS</span>
+                  </div>
+                  <div style="color: #FFE680; font-size: 0.65rem; text-align: center;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus-info-content">
+              <div class="bonus-header">
+                <h3 class="bonus-title">Bônus 01 — Guia Passo a Passo: Como Tirar a Tela Sem Virar Guerra</h3>
+                <span class="badge badge-green">Bônus Exclusivo</span>
+              </div>
+              <p class="bonus-desc">
+                8 passos pra reduzir a tela sem a birra que faz a maioria desistir no segundo dia.
+              </p>
+              <span class="bonus-benefit">Elimina a dificuldade: resolve exatamente o momento em que a maioria trava — a hora de desligar.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 2 -->
+        <div class="bonus-card">
+          <div class="bonus-card-with-mockup">
+            <div class="bonus-mockup-visual" aria-label="Mockup 3D Bônus 2">
+              <div class="planner-mockup-wrap">
+                <div class="planner-sheet">
+                  <div class="planner-magnet"></div>
+                  <div style="text-align: center; margin-top: 4px;">
+                    <span style="font-size: 0.425rem; font-weight: 800; color: var(--terracotta); text-transform: uppercase;">Cronograma Semanal</span>
+                    <div style="font-size: 0.65rem; font-weight: 900; color: var(--text-dark); line-height: 1;">GELADEIRA</div>
+                  </div>
+                  <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; margin: 4px 0;">
+                    <div style="background: #FFE5D9; height: 12px; border-radius: 2px; font-size: 0.35rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--terracotta);">SEG</div>
+                    <div style="background: #E8F5E9; height: 12px; border-radius: 2px; font-size: 0.35rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--green-dark);">TER</div>
+                    <div style="background: #FFF9C4; height: 12px; border-radius: 2px; font-size: 0.35rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #B45309;">QUA</div>
+                    <div style="background: #E1F5FE; height: 12px; border-radius: 2px; font-size: 0.35rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #0284C7;">QUI</div>
+                    <div style="background: #F3E5F5; height: 12px; border-radius: 2px; font-size: 0.35rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #7E22CE;">SEX</div>
+                  </div>
+                  <div style="font-size: 0.45rem; color: var(--green-dark); font-weight: 800; text-align: center;">✓ 21 Dias de Conquistas</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus-info-content">
+              <div class="bonus-header">
+                <h3 class="bonus-title">Bônus 02 — Cronograma de 21 Dias Pronto pra Imprimir</h3>
+                <span class="badge badge-green">Bônus Exclusivo</span>
+              </div>
+              <p class="bonus-desc">
+                cole na geladeira e marque cada dia concluído. Formato limpo e atraente para envolver a criança na rotina.
+              </p>
+              <span class="bonus-benefit">Economiza tempo: zero trabalho de organizar a rotina sozinha.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 3 -->
+        <div class="bonus-card">
+          <div class="bonus-card-with-mockup">
+            <div class="bonus-mockup-visual" aria-label="Mockup 3D Bônus 3">
+              <div class="mini-book-container">
+                <div class="mini-book-top-pages"></div>
+                <div class="mini-spine bg-spin-dark">
+                  <span class="mini-spine-text">7 ERROS</span>
+                </div>
+                <div class="mini-cover bg-cov-dark">
+                  <div>
+                    <span style="font-size: 0.45rem; font-weight: 800; text-transform: uppercase; background: rgba(196, 69, 31, 0.4); padding: 1px 4px; border-radius: 3px; color: #FFD4C4;">BÔNUS 03</span>
+                    <div style="font-size: 0.725rem; font-weight: 900; line-height: 1.1; margin-top: 2px; text-transform: uppercase;">
+                      OS 7 ERROS
+                      <span style="color: #FF8A65; display: block; font-size: 0.825rem;">DA FALA</span>
+                    </div>
+                  </div>
+                  <div style="text-align: center;">
+                    <div style="font-size: 1.1rem; line-height: 1;">⚠️🔍</div>
+                    <span style="font-size: 0.45rem; font-weight: 700; color: #E0E0E0;">O QUE EVITAR</span>
+                  </div>
+                  <div style="color: #FFDE59; font-size: 0.65rem; text-align: center;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus-info-content">
+              <div class="bonus-header">
+                <h3 class="bonus-title">Bônus 03 — Os 7 Erros que Atrasam Ainda Mais a Fala do Seu Filho</h3>
+                <span class="badge badge-green">Bônus Exclusivo</span>
+              </div>
+              <p class="bonus-desc">
+                os erros mais comuns que a maioria das mães comete sem perceber, e o que fazer no lugar.
+              </p>
+              <span class="bonus-benefit">Evita erro: protege o resultado que você já está construindo nos outros guias.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 4 -->
+        <div class="bonus-card">
+          <div class="bonus-card-with-mockup">
+            <div class="bonus-mockup-visual" aria-label="Mockup 3D Bônus 4">
+              <div class="cards-deck-wrap">
+                <div class="card-item-stacked st-1">
+                  <span style="font-size: 0.45rem; font-weight: 800; color: #9A7B56;">CARD #01</span>
+                  <div style="font-size: 0.85rem; text-align: center;">🚗🎵</div>
+                  <span style="font-size: 0.425rem; font-weight: 600; text-align: center;">No Carro</span>
+                </div>
+                <div class="card-item-stacked st-2">
+                  <span style="font-size: 0.45rem; font-weight: 800; color: var(--green-dark);">CARD #02</span>
+                  <div style="font-size: 0.85rem; text-align: center;">🍽️👀</div>
+                  <span style="font-size: 0.425rem; font-weight: 600; text-align: center;">Restaurante</span>
+                </div>
+                <div class="card-item-stacked st-3">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.475rem; font-weight: 800; color: var(--terracotta);">KIT SOS</span>
+                    <span style="font-size: 0.4rem; background: var(--yellow-light); padding: 1px 3px; border-radius: 2px; font-weight: 700;">20 CARDS</span>
+                  </div>
+                  <div style="text-align: center; margin: 2px 0;">
+                    <div style="font-size: 1.1rem; line-height: 1;">⚡🎴</div>
+                    <span style="font-size: 0.5rem; font-weight: 800; color: var(--text-dark); display: block; margin-top: 1px;">10 a 60 seg</span>
+                  </div>
+                  <div style="font-size: 0.425rem; font-weight: 800; color: var(--green-dark); text-align: center;">Pronto de Bolso</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus-info-content">
+              <div class="bonus-header">
+                <h3 class="bonus-title">Bônus 04 — Kit SOS Sem Tela: 20 Cartões de Bolso</h3>
+                <span class="badge badge-yellow">Bônus Irresistível</span>
+              </div>
+              <p class="bonus-desc">
+                atividades de 10 a 60 segundos pra fila, carro e restaurante. O socorro perfeito para momentos de tédio fora de casa.
+              </p>
+              <span class="bonus-benefit">O bônus irresistível: resolve o momento mais difícil do dia — aquele em que a tela sempre ganha.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1º Botão de CTA da página -->
+      <div style="text-align: center; margin-top: 1rem;">
+        <a href="#comprar" class="btn-cta" id="cta-bloco-8">
+          Quero acesso às 60 atividades + os 4 bônus
+          <svg class="icon" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 9: DEPOIMENTO LIGADO A UM BÔNUS ESPECÍFICO (Kit SOS Sem Tela)
+       ======================================================================== -->
+  <section class="bg-main" id="depoimento-bonus">
+    <div class="container" style="max-width: 640px;">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="avatar-mother avatar-mother-yellow">RG</div>
+          <div class="testimonial-author-wrap">
+            <span class="testimonial-author">Renata Guimarães</span>
+            <span class="testimonial-child">Mãe da Alice (3 anos)</span>
+          </div>
+        </div>
+        <div class="stars-gold">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-body">
+          "O <strong>Kit SOS de 20 cartões de bolso</strong> é a melhor invenção desse material! Ir a restaurante ou esperar em sala de espera antes era um sofrimento sem fim: ou dava o celular ou aguentava o escândalo. Agora eu puxo um cartãozinho da bolsa e a gente brinca de adivinhar ou imitar sons em 1 minutinho. Ela fica entretida e conversa com a gente. <strong>Só esse bônus já pagou 10x o valor do protocolo!</strong>"
+        </p>
+        <div class="verified-badge">
+          <svg class="icon" style="width: 14px; height: 14px; color: var(--green);" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Compra Verificada • Bônus Kit SOS Sem Tela</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 10: PARA QUEM É
+       ======================================================================== -->
+  <section class="bg-secondary" id="para-quem-e">
+    <div class="container">
+      <h2 class="section-title">Para quem é o Protocolo Fala Livre</h2>
+
+      <ul class="who-list">
+        <li class="who-item">
+          <div class="who-check">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <p class="who-text">
+            <strong>Para quem sente medo de que a tela esteja atrasando a fala do filho</strong> — atividades prontas pra agir hoje, sem esperar diagnóstico.
+          </p>
+        </li>
+
+        <li class="who-item">
+          <div class="who-check">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <p class="who-text">
+            <strong>Para quem já tentou reduzir a tela e não aguentou a birra</strong> — o Bônus 1 existe exatamente pra isso.
+          </p>
+        </li>
+
+        <li class="who-item">
+          <div class="who-check">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <p class="who-text">
+            <strong>Para quem quer ver o filho falando e brincando como as outras crianças da idade</strong> — sem culpa, sem comparação, com um caminho claro.
+          </p>
+        </li>
+
+        <li class="who-item">
+          <div class="who-check">
+            <svg class="icon icon-green" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <p class="who-text">
+            <strong>Para quem não tem tempo de pesquisar e montar uma rotina do zero</strong> — está tudo pronto, é só aplicar.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 11: RECAPITULAÇÃO COM ANCORAGEM DE VALOR
+       ======================================================================== -->
+  <section class="bg-main" id="recapitulacao-valor">
+    <div class="container">
+      <h2 class="section-title">Veja tudo que você vai levar…</h2>
+
+      <div class="anchoring-box">
+        <ul class="anchoring-list">
+          <li class="anchoring-item">
+            <span>📖 Entregável 1 — 60 Atividades Sem Tela (21 dias)</span>
+            <span class="price-struck">R$97</span>
+          </li>
+          <li class="anchoring-item">
+            <span>🛡️ Bônus 1 — Guia Passo a Passo Sem Birra</span>
+            <span class="price-struck">R$67</span>
+          </li>
+          <li class="anchoring-item">
+            <span>📅 Bônus 2 — Cronograma de 21 Dias</span>
+            <span class="price-struck">R$37</span>
+          </li>
+          <li class="anchoring-item">
+            <span>⚠️ Bônus 3 — Os 7 Erros</span>
+            <span class="price-struck">R$47</span>
+          </li>
+          <li class="anchoring-item">
+            <span>🎴 Bônus 4 — Kit SOS Sem Tela (20 cartões)</span>
+            <span class="price-struck">R$48</span>
+          </li>
+        </ul>
+
+        <div class="anchoring-total-row">
+          <span class="anchoring-total-label">Valor Total Separado:</span>
+          <span class="anchoring-total-value">R$296</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 12: PREÇO + CTA (1ª oferta) — id="comprar"
+       ======================================================================== -->
+  <section class="bg-secondary" id="comprar">
+    <div class="container">
+      <div class="offer-box">
+        <div class="offer-badge">Condição Especial de Lançamento</div>
+
+        <!-- 3D Mini Bundle Preview in Offer -->
+        <div class="mockup-3d-wrapper" style="max-width: 380px; margin: 1rem auto 0.75rem auto;">
+          <div class="mockup-scene-3d" style="height: 240px; transform: scale(0.85); transform-origin: center center;">
+            <div class="floor-shadow-realistic" style="width: 260px;"></div>
+
+            <!-- Mini 3D Book -->
+            <div class="box-book-3d" style="width: 155px; height: 215px;">
+              <div class="book-top-edge"></div>
+              <div class="book-spine-side">
+                <span class="book-spine-sub">21 DIAS</span>
+                <span class="book-spine-title">FALA LIVRE</span>
+              </div>
+              <div class="book-front-cover" style="padding: 10px 10px 10px 12px;">
+                <div class="book-header-box">
+                  <div class="book-title-bold" style="font-size: 0.95rem;">
+                    Protocolo
+                    <span class="book-title-glow" style="font-size: 1.25rem;">Fala Livre</span>
+                  </div>
+                  <div class="book-sub-ribbon" style="font-size: 0.45rem; padding: 2px 4px;">60 Atividades • 21 Dias</div>
+                </div>
+                <div class="book-illustration-box" style="margin: 4px 0; padding: 4px;">
+                  <div class="book-illustration-visual">
+                    <span class="book-mascot-emoji" style="font-size: 1.4rem;">🧸💬</span>
+                  </div>
+                  <div class="book-bonus-seal" style="width: 26px; height: 26px; font-size: 0.35rem;">
+                    <span style="font-size: 0.55rem;">60</span>
+                  </div>
+                </div>
+                <div class="book-stars-gold" style="font-size: 0.65rem;">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini 3D Phone -->
+            <div class="smartphone-3d" style="width: 100px; height: 180px; right: 18px; bottom: 8px;">
+              <div class="smartphone-screen" style="border-radius: 18px; padding: 6px;">
+                <div class="smartphone-dynamic-island" style="width: 28px; height: 7px;"></div>
+                <div class="smartphone-glare"></div>
+                <div class="phone-cover-inner" style="margin-top: 4px;">
+                  <span style="font-size: 0.42rem; font-weight: 800; color: #FFE680;">+ 4 BÔNUS</span>
+                  <div class="phone-title-sm" style="font-size: 0.65rem;">Digital</div>
+                </div>
+                <div class="phone-art-card" style="margin: 4px 0; padding: 4px;">
+                  <span class="phone-mascot" style="font-size: 1.1rem;">📱✨</span>
+                  <span style="font-size: 0.4rem; font-weight: 800; color: var(--terracotta);">PDF Imediato</span>
+                </div>
+                <div class="phone-stars" style="font-size: 0.55rem;">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offer-copy">
+          <p>
+            Esse seria o valor total de cada item vendido separadamente, e que facilmente poderia custar muito mais, visto que é o material completo pra reduzir a tela e destravar a fala do seu filho em 21 dias.
+          </p>
+          <p>
+            Mas hoje eu quero firmar um compromisso com você, e te provar que sim, é possível ver o seu filho falando mais — sem gastar uma fortuna e sem precisar de fonoaudióloga particular pra começar.
+          </p>
+        </div>
+
+        <div class="price-box">
+          <div class="price-from">DE R$296</div>
+          <div class="price-to-wrap">
+            <span class="price-to-tag">Por Apenas</span>
+            <div class="price-main">R$37</div>
+            <div class="price-condition">À VISTA</div>
+          </div>
+        </div>
+
+        <!-- TODO: substituir pelo link de checkout da Hotmart/Kiwify -->
+        <a href="#" class="btn-cta" id="cta-checkout-1">
+          Sim, quero garantir por R$37 à vista
+          <svg class="icon" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <div class="price-security-note">
+          <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <span>Pagamento 100% seguro • Acesso imediato no seu e-mail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 13: COMO ACESSAR
+       ======================================================================== -->
+  <section class="bg-main" id="como-acessar">
+    <div class="container">
+      <h2 class="section-title">Compre agora e receba seu acesso na hora!</h2>
+
+      <div class="access-grid">
+        <div class="access-card">
+          <div class="access-icon-wrap">
+            <svg class="icon icon-lg" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          </div>
+          <h3 class="access-step-title">FAÇA SUA COMPRA</h3>
+          <p class="access-step-desc">assim que finalizar, você recebe o acesso no e-mail.</p>
+        </div>
+
+        <div class="access-card">
+          <div class="access-icon-wrap">
+            <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          </div>
+          <h3 class="access-step-title">ACESSE TUDO</h3>
+          <p class="access-step-desc">as 60 atividades e os 4 bônus liberados de uma vez, em PDF.</p>
+        </div>
+
+        <div class="access-card">
+          <div class="access-icon-wrap">
+            <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="access-step-title">TUDO PRONTO</h3>
+          <p class="access-step-desc">agora é só abrir o Protocolo Fala Livre e aplicar o Dia 1 hoje mesmo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 14: GARANTIA
+       ======================================================================== -->
+  <section class="bg-secondary" id="garantia">
+    <div class="container">
+      <div class="guarantee-box">
+        <div class="guarantee-seal">
+          <span class="guarantee-days">7</span>
+          <span class="guarantee-label">Dias</span>
+          <span style="font-size: 0.65rem; font-weight: 600;">Garantia</span>
+        </div>
+
+        <div>
+          <h2 class="guarantee-title">7 dias de garantia incondicional</h2>
+          <p class="guarantee-text">
+            Eis aqui o nosso acordo: você tem 7 dias para experimentar o conteúdo e, se ainda achar que ele não faz sentido para você, basta enviar um pedido para nossa equipe e nós reembolsaremos 100% do valor pago.
+          </p>
+          <p class="guarantee-text" style="font-weight: 600; color: var(--text-dark); margin-top: 0.5rem;">
+            Preto no branco. Não estamos de brincadeira e queremos que você tenha muitos resultados!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 15: FECHAMENTO BINÁRIO
+       ======================================================================== -->
+  <section class="bg-main" id="fechamento-binario">
+    <div class="container">
+      <h2 class="section-title">Agora você tem duas opções:</h2>
+
+      <div class="binary-container">
+        <div class="binary-card binary-card-1">
+          <span class="binary-tag binary-tag-1">Opção 1</span>
+          <p class="binary-desc">
+            Continuar vendo a tela resolver o momento, e sentindo aquele aperto toda vez que pensar se o atraso do seu filho é 'normal'
+          </p>
+        </div>
+
+        <div class="binary-card binary-card-2">
+          <span class="binary-tag binary-tag-2">Opção 2 (Recomendada)</span>
+          <p class="binary-desc">
+            Ter acesso ao Protocolo Fala Livre e começar hoje os 21 dias que podem destravar a fala do seu filho
+          </p>
+        </div>
+      </div>
+
+      <div class="binary-conclusion">
+        <p>Eu sei (e você também sabe): a opção 2 é a mais inteligente.</p>
+        <p style="font-weight: 500; font-size: 1.05rem; color: var(--text-dark); margin-top: 0.25rem;">
+          Então clica no botão abaixo e garante o seu Protocolo Fala Livre agora.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 16: PREÇO + CTA (2ª oferta) — idêntico ao bloco 12
+       ======================================================================== -->
+  <section class="bg-secondary" id="segunda-oferta">
+    <div class="container">
+      <div class="offer-box">
+        <div class="offer-badge">Condição Especial de Lançamento</div>
+
+        <!-- 3D Mini Bundle Preview in Offer -->
+        <div class="mockup-3d-wrapper" style="max-width: 380px; margin: 1rem auto 0.75rem auto;">
+          <div class="mockup-scene-3d" style="height: 240px; transform: scale(0.85); transform-origin: center center;">
+            <div class="floor-shadow-realistic" style="width: 260px;"></div>
+
+            <!-- Mini 3D Book -->
+            <div class="box-book-3d" style="width: 155px; height: 215px;">
+              <div class="book-top-edge"></div>
+              <div class="book-spine-side">
+                <span class="book-spine-sub">21 DIAS</span>
+                <span class="book-spine-title">FALA LIVRE</span>
+              </div>
+              <div class="book-front-cover" style="padding: 10px 10px 10px 12px;">
+                <div class="book-header-box">
+                  <div class="book-title-bold" style="font-size: 0.95rem;">
+                    Protocolo
+                    <span class="book-title-glow" style="font-size: 1.25rem;">Fala Livre</span>
+                  </div>
+                  <div class="book-sub-ribbon" style="font-size: 0.45rem; padding: 2px 4px;">60 Atividades • 21 Dias</div>
+                </div>
+                <div class="book-illustration-box" style="margin: 4px 0; padding: 4px;">
+                  <div class="book-illustration-visual">
+                    <span class="book-mascot-emoji" style="font-size: 1.4rem;">🧸💬</span>
+                  </div>
+                  <div class="book-bonus-seal" style="width: 26px; height: 26px; font-size: 0.35rem;">
+                    <span style="font-size: 0.55rem;">60</span>
+                  </div>
+                </div>
+                <div class="book-stars-gold" style="font-size: 0.65rem;">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini 3D Phone -->
+            <div class="smartphone-3d" style="width: 100px; height: 180px; right: 18px; bottom: 8px;">
+              <div class="smartphone-screen" style="border-radius: 18px; padding: 6px;">
+                <div class="smartphone-dynamic-island" style="width: 28px; height: 7px;"></div>
+                <div class="smartphone-glare"></div>
+                <div class="phone-cover-inner" style="margin-top: 4px;">
+                  <span style="font-size: 0.42rem; font-weight: 800; color: #FFE680;">+ 4 BÔNUS</span>
+                  <div class="phone-title-sm" style="font-size: 0.65rem;">Digital</div>
+                </div>
+                <div class="phone-art-card" style="margin: 4px 0; padding: 4px;">
+                  <span class="phone-mascot" style="font-size: 1.1rem;">📱✨</span>
+                  <span style="font-size: 0.4rem; font-weight: 800; color: var(--terracotta);">PDF Imediato</span>
+                </div>
+                <div class="phone-stars" style="font-size: 0.55rem;">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offer-copy">
+          <p>
+            Esse seria o valor total de cada item vendido separadamente, e que facilmente poderia custar muito mais, visto que é o material completo pra reduzir a tela e destravar a fala do seu filho em 21 dias.
+          </p>
+          <p>
+            Mas hoje eu quero firmar um compromisso com você, e te provar que sim, é possível ver o seu filho falando mais — sem gastar uma fortuna e sem precisar de fonoaudióloga particular pra começar.
+          </p>
+        </div>
+
+        <div class="price-box">
+          <div class="price-from">DE R$296</div>
+          <div class="price-to-wrap">
+            <span class="price-to-tag">Por Apenas</span>
+            <div class="price-main">R$37</div>
+            <div class="price-condition">À VISTA</div>
+          </div>
+        </div>
+
+        <!-- TODO: substituir pelo link de checkout da Hotmart/Kiwify -->
+        <a href="#" class="btn-cta" id="cta-checkout-2">
+          Sim, quero garantir por R$37 à vista
+          <svg class="icon" viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <div class="price-security-note">
+          <svg class="icon icon-green" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <span>Pagamento 100% seguro • Acesso imediato no seu e-mail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       BLOCO 17: FAQ (em formato acordeão/collapse, clicável)
+       ======================================================================== -->
+  <section class="bg-main" id="faq">
+    <div class="container">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Qual a diferença do Protocolo Fala Livre pra um acompanhamento com fonoaudióloga?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>O protocolo é um guia prático de estímulo e rotina pra você aplicar em casa, não é terapia. Ele resolve a parte de ambiente e repetição diária — se depois de aplicar você não perceber evolução, ou notar outros sinais de alerta, o próprio material recomenda buscar avaliação profissional.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Como posso tirar dúvidas?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>[Preencher com canal real: e-mail, WhatsApp, etc.]</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Por quanto tempo terei acesso?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Acesso vitalício ao material em PDF, sem mensalidade.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Terei acesso a você?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>[Preencher conforme sua política de suporte]</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Preciso ter experiência com atividades pra crianças pra aplicar?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Não. Todas as 60 atividades vêm prontas, com instrução simples de 1 a 2 linhas — é só ler e aplicar.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Funciona mesmo se meu filho ainda não tiver diagnóstico de nada?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. O protocolo foi feito justamente pra quem quer agir agora, sem esperar fila de avaliação — e continua sendo útil mesmo se depois vocês buscarem acompanhamento profissional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       RODAPÉ
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-disclaimer">
+        Aviso: Este material é um guia educativo de estímulos e rotina e não substitui diagnósticos, tratamentos ou o acompanhamento individualizado de médicos e fonoaudiólogos.
+      </p>
+      <p style="margin-bottom: 0.5rem;">
+        &copy; <span id="year"></span> Protocolo Fala Livre. Todos os direitos reservados.
+      </p>
+      <p style="font-size: 0.8rem; color: var(--text-light);">
+        <a href="#topo" style="color: var(--text-muted); text-decoration: underline;">Voltar ao topo</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================
+       STICKY MOBILE CTA BAR (Aparece ao rolar)
+       ======================================================================== -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <div class="sticky-price-info">
+      <span class="sticky-price-label">Protocolo Fala Livre</span>
+      <span class="sticky-price-val">R$37 à vista</span>
+    </div>
+    <a href="#comprar" class="sticky-btn" id="cta-sticky-mobile">
+      Garantir por R$37
+    </a>
+  </div>
+
+
+  <!-- ========================================================================
+       SCRIPTS (Vanilla JS, 100% Autocontido)
+       ======================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Dynamic Year
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // FAQ Accordion
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const item = this.parentElement;
+          const isActive = item.classList.contains('active');
+
+          // Close other open accordions for clean accordion behavior
+          faqQuestions.forEach(function (otherBtn) {
+            otherBtn.parentElement.classList.remove('active');
+            otherBtn.setAttribute('aria-expanded', 'false');
+          });
+
+          if (!isActive) {
+            item.classList.add('active');
+            this.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Sticky Mobile Bar scroll listener
+      const stickyBar = document.getElementById('mobileStickyBar');
+      const buySection = document.getElementById('comprar');
+
+      function checkStickyVisibility() {
+        if (!stickyBar) return;
+        const scrollY = window.scrollY || window.pageYOffset;
+        // Show after scrolling past 300px
+        if (scrollY > 300) {
+          stickyBar.style.transform = 'translateY(0)';
+        } else {
+          stickyBar.style.transform = 'translateY(100%)';
+        }
+      }
+
+      window.addEventListener('scroll', checkStickyVisibility, { passive: true });
+      checkStickyVisibility();
+    });
+  </script>
+</body>
+</html>

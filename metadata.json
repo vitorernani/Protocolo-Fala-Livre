@@ -1,0 +1,8 @@
+{
+  "name": "Protocolo Fala Livre",
+  "description": "Reduza a tela e destrave a fala do seu filho em 21 dias — 60 atividades prontas de 10 minutos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
