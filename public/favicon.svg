@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pfl-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E1552A"/>
+      <stop offset="100%" stop-color="#A83614"/>
+    </linearGradient>
+    <linearGradient id="pfl-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE072"/>
+      <stop offset="100%" stop-color="#FFB300"/>
+    </linearGradient>
+    <filter id="pfl-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#4A1404" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background Badge: Squircle -->
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#pfl-grad)"/>
+  <!-- Subtle border highlight -->
+  <rect x="7.5" y="7.5" width="105" height="105" rx="26.5" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+  <!-- Main Parent Speech Bubble -->
+  <path d="M28 44 C28 32 37 24 50 24 L70 24 C83 24 92 32 92 44 C92 56 83 63 70 63 L49 63 L35 73 L37 60 C31 56 28 50 28 44 Z" fill="#FFFFFF" filter="url(#pfl-shadow)"/>
+  <!-- Sound / Speech Wave arcs inside parent bubble -->
+  <circle cx="49" cy="44" r="4.5" fill="#C4451F"/>
+  <path d="M59 36 C64 40 64 48 59 52" fill="none" stroke="#C4451F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M68 30 C76 38 76 50 68 58" fill="none" stroke="#C4451F" stroke-width="3" stroke-linecap="round"/>
+  <!-- Child Speech Bubble (Teal/Green with breakthrough sparkle) -->
+  <path d="M58 70 C58 60 65 54 75 54 L84 54 C93 54 100 60 100 70 C100 77 94 82 86 83 L88 92 L79 84 L75 84 C65 84 58 78 58 70 Z" fill="#4C9A82" filter="url(#pfl-shadow)"/>
+  <!-- Sparkling Star in child bubble -->
+  <path d="M79 69 L81.5 62 L84 69 L91 71.5 L84 74 L81.5 81 L79 74 L72 71.5 Z" fill="url(#pfl-gold)"/>
+</svg>

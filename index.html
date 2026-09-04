@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Protocolo Fala Livre — Reduza a Tela e Destrave a Fala em 21 Dias</title>
-  <meta name="description" content="60 atividades sem tela organizadas em 21 dias para mães de crianças de 2 a 4 anos reduzirem a tela e estimularem a fala em casa.">
+  <meta name="description" content="Reduza a tela e destrave a fala do seu filho em 21 dias — 60 atividades prontas de 10 minutos.">
   
+  <!-- Favicons (SVG Data URI + SVG File) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E1552A'/%3E%3Cstop offset='100%25' stop-color='%23A83614'/%3E%3C/linearGradient%3E%3ClinearGradient id='gold' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FFE072'/%3E%3Cstop offset='100%25' stop-color='%23FFB300'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='6' y='6' width='108' height='108' rx='28' fill='url(%23g)'/%3E%3Crect x='7.5' y='7.5' width='105' height='105' rx='26.5' fill='none' stroke='rgba(255,255,255,0.22)' stroke-width='2'/%3E%3Cpath d='M28 44 C28 32 37 24 50 24 L70 24 C83 24 92 32 92 44 C92 56 83 63 70 63 L49 63 L35 73 L37 60 C31 56 28 50 28 44 Z' fill='%23FFFFFF'/%3E%3Ccircle cx='49' cy='44' r='4.5' fill='%23C4451F'/%3E%3Cpath d='M59 36 C64 40 64 48 59 52' fill='none' stroke='%23C4451F' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M68 30 C76 38 76 50 68 58' fill='none' stroke='%23C4451F' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M58 70 C58 60 65 54 75 54 L84 54 C93 54 100 60 100 70 C100 77 94 82 86 83 L88 92 L79 84 L75 84 C65 84 58 78 58 70 Z' fill='%234C9A82'/%3E%3Cpath d='M79 69 L81.5 62 L84 69 L91 71.5 L84 74 L81.5 81 L79 74 L72 71.5 Z' fill='url(%23gold)'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Protocolo Fala Livre — Reduza a Tela e Destrave a Fala em 21 Dias">
-  <meta property="og:description" content="60 atividades de 10 minutos prontas para aplicar em casa, sem crise e sem fonoaudióloga particular.">
+  <meta property="og:description" content="Reduza a tela e destrave a fala do seu filho em 21 dias — 60 atividades prontas de 10 minutos.">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Google Fonts: Lora (Serif) & Inter (Sans) -->
@@ -134,6 +139,140 @@
       max-width: 860px;
       margin: 0 auto;
       padding: 0 1.25rem;
+    }
+
+    /* ==========================================================================
+       SITE HEADER & PROFESSIONAL BRAND LOGO
+       ========================================================================== */
+    .site-header {
+      width: 100%;
+      background: rgba(255, 247, 238, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.85rem 0;
+      position: relative;
+      z-index: 50;
+    }
+
+    .site-header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-logo-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .brand-logo-link:hover {
+      opacity: 0.95;
+      transform: translateY(-1px);
+    }
+
+    .brand-logo-mark {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(196, 69, 31, 0.24);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #E1552A 0%, #A83614 100%);
+    }
+
+    .brand-logo-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .brand-logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .brand-name-top {
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .brand-name-main {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      letter-spacing: -0.015em;
+      display: flex;
+      align-items: center;
+      gap: 0.32rem;
+    }
+
+    .brand-name-main span {
+      color: var(--text-dark);
+    }
+
+    .brand-tagline-mini {
+      font-size: 0.625rem;
+      font-weight: 600;
+      color: var(--green-dark);
+      letter-spacing: 0.04em;
+    }
+
+    .header-trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.725rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      background: var(--green-light);
+      border: 1px solid rgba(76, 154, 130, 0.3);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+    }
+
+    .header-trust-badge svg {
+      width: 15px;
+      height: 15px;
+      stroke: var(--green-dark);
+      fill: none;
+      stroke-width: 2.2;
+    }
+
+    @media (max-width: 480px) {
+      .site-header {
+        padding: 0.65rem 0;
+      }
+      .brand-logo-mark {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+      }
+      .brand-name-main {
+        font-size: 1.05rem;
+      }
+      .header-trust-badge {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+      }
+      .brand-tagline-mini {
+        display: none;
+      }
     }
 
     /* Section Spacing & Alternating Backgrounds */
@@ -2006,6 +2145,51 @@
 <body>
 
   <!-- ========================================================================
+       CABEÇALHO / LOGOTIPO OFICIAL
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header-inner">
+      <a href="#topo" class="brand-logo-link" aria-label="Protocolo Fala Livre - Início">
+        <div class="brand-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="brand-logo-svg">
+            <defs>
+              <linearGradient id="hdr-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#E1552A"/>
+                <stop offset="100%" stop-color="#A83614"/>
+              </linearGradient>
+              <linearGradient id="hdr-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE072"/>
+                <stop offset="100%" stop-color="#FFB300"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="120" height="120" fill="url(#hdr-grad)"/>
+            <rect x="2" y="2" width="116" height="116" rx="26" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2.5"/>
+            <!-- Parent dialogue bubble -->
+            <path d="M28 44 C28 32 37 24 50 24 L70 24 C83 24 92 32 92 44 C92 56 83 63 70 63 L49 63 L35 73 L37 60 C31 56 28 50 28 44 Z" fill="#FFFFFF"/>
+            <!-- Sound / Speech Waves -->
+            <circle cx="49" cy="44" r="4.5" fill="#C4451F"/>
+            <path d="M59 36 C64 40 64 48 59 52" fill="none" stroke="#C4451F" stroke-width="3" stroke-linecap="round"/>
+            <path d="M68 30 C76 38 76 50 68 58" fill="none" stroke="#C4451F" stroke-width="3" stroke-linecap="round"/>
+            <!-- Child dialogue bubble with breakthrough star -->
+            <path d="M58 70 C58 60 65 54 75 54 L84 54 C93 54 100 60 100 70 C100 77 94 82 86 83 L88 92 L79 84 L75 84 C65 84 58 78 58 70 Z" fill="#4C9A82"/>
+            <path d="M79 69 L81.5 62 L84 69 L91 71.5 L84 74 L81.5 81 L79 74 L72 71.5 Z" fill="url(#hdr-gold)"/>
+          </svg>
+        </div>
+        <div class="brand-logo-text">
+          <span class="brand-name-top">PROTOCOLO</span>
+          <span class="brand-name-main">FALA <span>LIVRE</span></span>
+          <span class="brand-tagline-mini">MÉTODO INFANTIL • 21 DIAS</span>
+        </div>
+      </a>
+
+      <div class="header-trust-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        <span>Método Validado</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
        BLOCO 1: HEADLINE + SUBHEADLINE (sem nenhum botão neste bloco)
        ======================================================================== -->
   <section class="hero-section" id="topo">
@@ -3045,6 +3229,36 @@
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container">
+      <div style="display: flex; justify-content: center; margin-bottom: 1.25rem;">
+        <div class="brand-logo-link" style="pointer-events: none;">
+          <div class="brand-logo-mark" style="width: 36px; height: 36px; border-radius: 10px;" aria-hidden="true">
+            <svg viewBox="0 0 120 120" class="brand-logo-svg">
+              <defs>
+                <linearGradient id="ftr-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#E1552A"/>
+                  <stop offset="100%" stop-color="#A83614"/>
+                </linearGradient>
+                <linearGradient id="ftr-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFE072"/>
+                  <stop offset="100%" stop-color="#FFB300"/>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="120" height="120" fill="url(#ftr-grad)"/>
+              <path d="M28 44 C28 32 37 24 50 24 L70 24 C83 24 92 32 92 44 C92 56 83 63 70 63 L49 63 L35 73 L37 60 C31 56 28 50 28 44 Z" fill="#FFFFFF"/>
+              <circle cx="49" cy="44" r="4.5" fill="#C4451F"/>
+              <path d="M59 36 C64 40 64 48 59 52" fill="none" stroke="#C4451F" stroke-width="3" stroke-linecap="round"/>
+              <path d="M68 30 C76 38 76 50 68 58" fill="none" stroke="#C4451F" stroke-width="3" stroke-linecap="round"/>
+              <path d="M58 70 C58 60 65 54 75 54 L84 54 C93 54 100 60 100 70 C100 77 94 82 86 83 L88 92 L79 84 L75 84 C65 84 58 78 58 70 Z" fill="#4C9A82"/>
+              <path d="M79 69 L81.5 62 L84 69 L91 71.5 L84 74 L81.5 81 L79 74 L72 71.5 Z" fill="url(#ftr-gold)"/>
+            </svg>
+          </div>
+          <div class="brand-logo-text" style="text-align: left;">
+            <span class="brand-name-top">PROTOCOLO</span>
+            <span class="brand-name-main" style="font-size: 1.05rem;">FALA <span>LIVRE</span></span>
+          </div>
+        </div>
+      </div>
+
       <p class="footer-disclaimer">
         Aviso: Este material é um guia educativo de estímulos e rotina e não substitui diagnósticos, tratamentos ou o acompanhamento individualizado de médicos e fonoaudiólogos.
       </p>
